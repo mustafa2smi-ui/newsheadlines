@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ebee; /* हल्का ग्रे बैकग्राउंड */
+    color: #333;
+}
+
+header {
+    background-color: #3f51b5; /* नीला रंग */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#news-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+/* **Date Card Style** */
+.date-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.card-header {
+    background-color: #f5f5f5;
+    padding: 15px 20px;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #3f51b5;
+    border-bottom: 1px solid #eee;
+}
+
+/* **News List Style** */
+.news-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.news-item {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.news-item:last-child {
+    border-bottom: none;
+}
+
+.news-item a {
+    font-size: 1.05em;
+    color: #0056b3;
+    text-decoration: none;
+    display: block;
+}
+
+.news-item a:hover {
+    color: #3f51b5;
+}
+
+/* **Show More/Read More Button Style** */
+.show-more-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #e8eaf6; /* हल्का नीला */
+    color: #3f51b5;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+.show-more-button:hover {
+    background-color: #c5cbe8;
+}
+
+/* **Hidden List Style for Expand/Collapse** */
+.news-list.collapsed {
+    max-height: 100px; /* सिर्फ़ पहले 2-3 आइटम दिखेंगे, बाकी छुप जाएँगे */
+    overflow: hidden;
+    position: relative;
+}
+
+.news-list.collapsed::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: linear-gradient(to top, white, rgba(255, 255, 255, 0));
+}
+
+/* Floating Buttons Style (वही रहेगा) */
+.floating-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.floating-buttons button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5em;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.floating-buttons button:hover {
+    background-color: #218838;
+}
