@@ -1,5 +1,5 @@
 // **ध्यान दें:** यहाँ अपने Google Apps Script Web App URL को पेस्ट करें
-const GAS_API_URL = "YOUR_APPS_SCRIPT_WEB_APP_URL"; 
+const GAS_API_URL = "https://script.google.com/macros/s/AKfycbxaGotuSRWXtXzjBjiuLhvU069CQztQEw06YpT7E-vWoodS6pcdQ4-5JHzwVTcU0VEl1Q/exec"; 
 const MAX_VISIBLE_ITEMS = 3; // शुरुआत में कार्ड में कितने आइटम दिखने चाहिए
 
 // ----------------------
